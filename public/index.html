@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Growid.AI – פתרונות בינה מלאכותית לעסקים</title>
+<title>Growid.AI – דף נחיתה חכם עם מערכת ניהול לידים</title>
 <style>
 @font-face {
   font-family:'Chillax';
@@ -29,7 +29,7 @@ nav{position:fixed;top:0;right:0;left:0;z-index:100;height:66px;padding:0 6%;dis
 .nav-cta{background:var(--accent);color:#fff;border:none;padding:11px 24px;border-radius:9px;font-size:16px;font-weight:600;cursor:pointer;text-decoration:none;font-family:var(--font);transition:filter .18s,transform .18s;}
 .nav-cta:hover{filter:brightness(1.15);transform:translateY(-1px);}
 
-.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:130px 6% 90px;position:relative;overflow:hidden;}
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:168px 6% 90px;position:relative;overflow:hidden;}
 .orb{position:absolute;pointer-events:none;border-radius:50%;}
 .orb-1{width:640px;height:640px;background:radial-gradient(circle,rgba(123,92,245,.2) 0%,transparent 65%);top:-200px;left:50%;transform:translateX(-50%);}
 .orb-2{width:380px;height:380px;background:radial-gradient(circle,rgba(29,245,142,.1) 0%,transparent 65%);bottom:40px;right:6%;}
@@ -124,6 +124,11 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:44px 6%;}
 .footer-links a:hover{color:var(--text-1);}
 .footer-copy{max-width:1180px;margin:24px auto 0;font-size:14px;color:var(--text-3);text-align:center;border-top:1px solid var(--border);padding-top:20px;}
 
+.ticker-wrap{position:fixed;top:66px;right:0;left:0;z-index:99;overflow:hidden;background:rgba(7,7,13,.97);border-bottom:1px solid var(--border-a);height:38px;display:flex;align-items:center;}
+.ticker{display:flex;white-space:nowrap;animation:ticker-scroll 32s linear infinite;}
+.ticker span{font-size:14px;font-weight:600;color:#c4b0ff;letter-spacing:.5px;padding-left:60px;}
+@keyframes ticker-scroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease;}
 .reveal.v{opacity:1;transform:none;}
 .d1{transition-delay:.1s;}.d2{transition-delay:.2s;}.d3{transition-delay:.3s;}
@@ -159,27 +164,33 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:44px 6%;}
   <a href="#contact" class="nav-cta">דברו איתנו</a>
 </nav>
 
+<div class="ticker-wrap">
+  <div class="ticker">
+    <span>דף נחיתה חכם עם מערכת לניהול לידים ✦ &nbsp;&nbsp;&nbsp;&nbsp; דף נחיתה חכם עם מערכת לניהול לידים ✦ &nbsp;&nbsp;&nbsp;&nbsp; דף נחיתה חכם עם מערכת לניהול לידים ✦ &nbsp;&nbsp;&nbsp;&nbsp; דף נחיתה חכם עם מערכת לניהול לידים ✦ &nbsp;&nbsp;&nbsp;&nbsp; דף נחיתה חכם עם מערכת לניהול לידים ✦ &nbsp;&nbsp;&nbsp;&nbsp; דף נחיתה חכם עם מערכת לניהול לידים ✦ &nbsp;&nbsp;&nbsp;&nbsp;</span><span aria-hidden="true">דף נחיתה חכם עם מערכת לניהול לידים ✦ &nbsp;&nbsp;&nbsp;&nbsp; דף נחיתה חכם עם מערכת לניהול לידים ✦ &nbsp;&nbsp;&nbsp;&nbsp; דף נחיתה חכם עם מערכת לניהול לידים ✦ &nbsp;&nbsp;&nbsp;&nbsp; דף נחיתה חכם עם מערכת לניהול לידים ✦ &nbsp;&nbsp;&nbsp;&nbsp; דף נחיתה חכם עם מערכת לניהול לידים ✦ &nbsp;&nbsp;&nbsp;&nbsp; דף נחיתה חכם עם מערכת לניהול לידים ✦ &nbsp;&nbsp;&nbsp;&nbsp;</span>
+  </div>
+</div>
+
 <section class="hero">
   <div class="orb orb-1"></div><div class="orb orb-2"></div>
-  <div class="hero-badge reveal"><span class="badge-dot"></span>מהפכת ה-AI כבר כאן</div>
-  <h1 class="reveal d1">מגדירים מחדש<br>יעילות עסקית בעידן<br><span class="grad">הבינה המלאכותית</span></h1>
-  <p class="hero-sub reveal d2">אוטומציות חכמות, בוטים וסוכני AI המותאמים לתהליכים שלכם. פתרונות שהופכים כל תהליך ליתרון תחרותי אמיתי.</p>
+  <div class="hero-badge reveal"><span class="badge-dot"></span>המוצר שמגדיל את אחוזי הסגירה שלכם</div>
+  <h1 class="reveal d1">דף נחיתה חכם<br>+ מערכת ניהול לידים<br><span class="grad">הכל בפלטפורמה אחת</span></h1>
+  <p class="hero-sub reveal d2">כל ליד שמגיע דרך הדף שלכם נכנס ישירות למערכת — שם, מייל, תאריך, סטטוס. עוקבים, מתעדפים וסוגרים עסקאות מהר יותר.</p>
   <div class="hero-actions reveal d3">
-    <a href="#contact" class="btn-p">התחילו עכשיו</a>
-    <a href="#services" class="btn-g">גלו את השירותים ↓</a>
+    <a href="#contact" class="btn-p">בקשו דמו</a>
+    <a href="#services" class="btn-g">ראו איך זה עובד ↓</a>
   </div>
 </section>
 
 <section id="services">
   <div class="wrap">
-    <div class="eyebrow reveal">פתרונות מתקדמים</div>
-    <h2 class="sec-title reveal">השירותים שלנו</h2>
-    <p class="sec-desc reveal">מבוטים חכמים ועד לסוכנים אוטונומיים. כל פתרון בנוי בדיוק לצרכי הארגון שלכם.</p>
+    <div class="eyebrow reveal">מה כלול במוצר</div>
+    <h2 class="sec-title reveal">פלטפורמה אחת. שני כלים חזקים.</h2>
+    <p class="sec-desc reveal">דף נחיתה שממיר + מערכת שמנהלת. מהרגע שליד נכנס ועד לרגע שהעסקה נסגרת.</p>
     <div class="bento">
-      <div class="bc reveal"><div class="bc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#a78bff"><rect x="3" y="8" width="18" height="12" rx="3"/><path d="M8 8V6a4 4 0 0 1 8 0v2"/><circle cx="9" cy="14" r="1.5" fill="#a78bff" stroke="none"/><circle cx="15" cy="14" r="1.5" fill="#a78bff" stroke="none"/></svg></div><h3>בוטים חכמים</h3><p>בוטי שיחה מתקדמים שזמינים ללקוחות שלכם 24/7. עונים על שאלות, מזמינים פגישות, מנהלים לידים ומטפלים בפניות בלי צורך בהתערבות אנושית.</p><span class="bc-tag">שירות לקוחות · מכירות</span></div>
-      <div class="bc reveal d1"><div class="bc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#a78bff"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"/></svg></div><h3>סוכני AI אוטונומיים</h3><p>סוכנים חכמים שמבצעים משימות מורכבות לחלוטין באופן עצמאי. מחקר שוק, עיבוד נתונים ותיאום בין מערכות, בלי צורך בפיקוח שוטף.</p><span class="bc-tag g">אוטונומי · חכם</span></div>
-      <div class="bc reveal"><div class="bc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#a78bff"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M7 8h4M7 11h2"/></svg></div><h3>אפליקציות מותאמות ארגון</h3><p>אפליקציות AI שנבנות בדיוק לתהליכי העבודה שלכם. דשבורדים ניהוליים, אינטגרציות בין מערכות, ניתוח לידים ומרכז ידע ארגוני.</p><span class="bc-tag">פיתוח מותאם</span></div>
-      <div class="bc reveal d1"><div class="bc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#1DF58E"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg></div><h3>אוטומציה ארגונית</h3><p>אוטומציה מקצה לקצה של תהליכי העבודה בארגון. מחברים את כל המערכות שלכם לכלי אחד חכם שפועל ברציפות. מינימום חיכוך, מקסימום תפוקה.</p><span class="bc-tag g">יעילות · סקיילביליות</span></div>
+      <div class="bc reveal"><div class="bc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#a78bff"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M9 9h6M9 12h4"/><path d="M7 17l2-2 2 2 4-4"/></svg></div><h3>דף נחיתה מותאם אישית</h3><p>עיצוב מקצועי המבוסס על הלוגו, הצבעים ותוכן העסק שלכם. מובייל-ריספונסיב, מהיר לטעינה וממוטב להמרה — כדי שכל מבקר יהפוך לליד.</p><span class="bc-tag">דיגיטל · ממיר</span></div>
+      <div class="bc reveal d1"><div class="bc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#a78bff"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h3>ניהול לידים חכם</h3><p>כל ליד שמגיע דרך הדף נשמר אוטומטית במערכת עם שם, מייל, טלפון, תאריך ומקור. לא צריך לרשום כלום ידנית — הכל קורה לבד.</p><span class="bc-tag g">CRM · אוטומטי</span></div>
+      <div class="bc reveal"><div class="bc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#a78bff"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div><h3>מעקב סטטוס ועדיפות</h3><p>מסמנים כל ליד — חדש / בטיפול / סגור / לא רלוונטי. רואים בזמן אמת מה קורה בפייפליין ומה הצעד הבא עם כל לקוח פוטנציאלי.</p><span class="bc-tag">סטטוס · פייפליין</span></div>
+      <div class="bc reveal d1"><div class="bc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#1DF58E"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg></div><h3>התראות אוטומטיות</h3><p>קבלו התראה מיידית לווטסאפ ולמייל כל פעם שליד חדש נכנס — גם בסופ"ש, גם בלילה. אף ליד לא ייאבד, אף הזדמנות לא תפוספס.</p><span class="bc-tag g">התראות · WhatsApp · מייל</span></div>
     </div>
   </div>
 </section>
@@ -189,15 +200,15 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:44px 6%;}
     <div class="why-layout">
       <div>
         <div class="why-logo reveal"><img src="growid-assets/logo.png" alt="Growid.AI"></div>
-        <div class="eyebrow reveal">למה growid.ai</div>
-        <h2 class="sec-title reveal">כי הסטנדרטים של אתמול כבר לא מספיקים</h2>
-        <p class="sec-desc reveal" style="margin-bottom:0;">אנחנו לא עוד ספק טכנולוגיה. אנחנו שותפים אסטרטגיים שמניעים צמיחה אמיתית בעסק שלכם.</p>
+        <div class="eyebrow reveal">למה הפתרון שלנו עובד</div>
+        <h2 class="sec-title reveal">כי כל ליד שפוספס הוא כסף שנשאר על השולחן</h2>
+        <p class="sec-desc reveal" style="margin-bottom:0;">עסקים שמנהלים לידים בצורה מקצועית סוגרים יותר. זה לא קסם — זה תהליך. ואנחנו בונים אותו בשבילכם.</p>
       </div>
       <div class="why-grid">
-        <div class="wc reveal"><div class="wc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#a78bff"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h4>התאמה אישית מלאה</h4><p>כל פתרון בנוי בדיוק ל-DNA של העסק שלכם, לא פתרון מדף.</p></div>
-        <div class="wc reveal d1"><div class="wc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#a78bff"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div><h4>מהירות ללא פשרות</h4><p>מדמו לפרודקשן בזמן שיא, מבלי להתפשר על איכות.</p></div>
-        <div class="wc reveal"><div class="wc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#a78bff"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div><h4>AI מאובטח ואחראי</h4><p>עומד בתקני אבטחה ופרטיות מחמירים. מתאים לכל ארגון.</p></div>
-        <div class="wc reveal d1"><div class="wc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#a78bff"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></div><h4>ROI מדיד ומהיר</h4><p>לקוחותינו רואים חיסכון ממשי כבר בשבועות הראשונים.</p></div>
+        <div class="wc reveal"><div class="wc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#a78bff"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h4>לא מפספסים אף ליד</h4><p>כל פנייה נרשמת אוטומטית — גם בשעות הלילה, גם בסופ"ש, גם כשאתם עסוקים.</p></div>
+        <div class="wc reveal d1"><div class="wc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#a78bff"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div><h4>זמן תגובה מהיר יותר</h4><p>התראה ברגע שליד נכנס = תגובה מהירה = אחוז סגירה גבוה משמעותית.</p></div>
+        <div class="wc reveal"><div class="wc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#a78bff"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div><h4>תמונה ברורה של הפייפליין</h4><p>בטבלה אחת רואים כמה לידים יש, באיזה שלב כל אחד ומה הצעד הבא.</p></div>
+        <div class="wc reveal d1"><div class="wc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#a78bff"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div><h4>ללא תחזוקה טכנית</h4><p>הכל מנוהל עבורכם. אין צורך בידע טכני, שרתים, IT או הגדרות מורכבות.</p></div>
       </div>
     </div>
   </div>
@@ -205,68 +216,21 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:44px 6%;}
 
 <section id="projects">
   <div class="wrap">
-    <div class="eyebrow reveal">הבינה המלאכותית בפעולה</div>
-    <h2 class="sec-title reveal">הפרויקטים שלנו</h2>
-    <p class="sec-desc reveal">אפליקציות ופתרונות שבנינו עבור לקוחות אמיתיים, בתחומים שונים.</p>
+    <div class="eyebrow reveal">דמו חי</div>
+    <h2 class="sec-title reveal">כך נראה המוצר בפעולה</h2>
+    <p class="sec-desc reveal">הדף שאתם רואים עכשיו הוא דוגמה למוצר — דף נחיתה מקצועי המחובר לממשק ניהול לידים. ככה נראה ה-CRM שמנהל את כל הפניות שלכם:</p>
     <div class="proj-list">
 
       <div class="proj-card reveal">
-        <div class="proj-visual">
-          <div class="proj-visual-inner">
-            <img class="car-img" id="img-spendi" src="growid-assets/spendi_1.jpg" alt="Spendi">
-            <div class="car-dots" id="dots-spendi">
-              <button class="dot on" onclick="jump('spendi',0)"></button>
-              <button class="dot"    onclick="jump('spendi',1)"></button>
-              <button class="dot"    onclick="jump('spendi',2)"></button>
-            </div>
-          </div>
-        </div>
-        <div class="proj-body">
-          <span class="proj-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>ניהול הוצאות · AI</span>
-          <h3>Spendi | ספנדי</h3>
-          <p>אפליקציה למעקב הוצאות חכמה. המשתמש מצלם קבלה והמערכת מנתחת אותה תוך 5 שניות. זיהוי אוטומטי של קטגוריות, דשבורד חודשי, השוואה בין חודשים והמלצות חיסכון, בלי חיבור לחשבון הבנק.</p>
-        </div>
-      </div>
-
-      <div class="proj-card reveal">
         <div class="proj-body" style="order:2;">
-          <span class="proj-badge g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M6.5 6.5h11M6.5 17.5h11M4 12h16M2 9.5l2 2.5-2 2.5M22 9.5l-2 2.5 2 2.5"/></svg>כושר · תכנון אימונים</span>
-          <h3>growGym</h3>
-          <p>פלטפורמה לניהול אימונים למאמנים וספורטאים. מאמנים בונים מחזורי אימון מותאמים אישית, וספורטאים עוקבים אחר ההתקדמות שלהם בזמן אמת. ספריית תרגילים, אנליטיקת ביצועים ותוכניות אדפטיביות.</p>
-        </div>
-        <div class="proj-visual" style="order:1;">
-          <div class="proj-visual-inner">
-            <img class="car-img" id="img-growgym" src="growid-assets/growgym_1.jpg" alt="growGym">
-            <div class="car-dots" id="dots-growgym">
-              <button class="dot on" onclick="jump('growgym',0)"></button>
-              <button class="dot"    onclick="jump('growgym',1)"></button>
-            </div>
+          <span class="proj-badge g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>CRM · ניהול לידים</span>
+          <h3>מערכת ניהול הלידים</h3>
+          <p>ממשק ניהול נקי ואינטואיטיבי. רואים את כל הלידים בטבלה אחת — שם, מייל, טלפון, תאריך כניסה וסטטוס. מסמנים "בטיפול", "סגור" או "לא רלוונטי" בלחיצה אחת. ניתן לייצא לאקסל, לחפש ולסנן לפי כל שדה.</p>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:20px;">
+            <span class="proj-badge" style="margin-bottom:0;">סטטוס לידים</span>
+            <span class="proj-badge g" style="margin-bottom:0;">ייצוא Excel</span>
+            <span class="proj-badge" style="margin-bottom:0;">חיפוש וסינון</span>
           </div>
-        </div>
-      </div>
-
-      <div class="proj-card reveal">
-        <div class="proj-visual">
-          <div class="proj-visual-inner">
-            <img class="car-img" id="img-tourmate" src="growid-assets/tourmate_1.jpg" alt="Tourmate">
-            <div class="car-dots" id="dots-tourmate">
-              <button class="dot on" onclick="jump('tourmate',0)"></button>
-              <button class="dot"    onclick="jump('tourmate',1)"></button>
-            </div>
-          </div>
-        </div>
-        <div class="proj-body">
-          <span class="proj-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="10" r="3"/><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z"/></svg>תיירות · AI</span>
-          <h3>Tourmate</h3>
-          <p>פלטפורמה לניהול מסלולי טיול לאנשי מקצוע בתיירות. בניית מסלולים בממשק קנבן, AI שמייצר הצעות מותאמות לכל לקוח, שיתוף הצעות עם לקוחות ויצוא HTML מקצועי.</p>
-        </div>
-      </div>
-
-      <div class="proj-card reveal">
-        <div class="proj-body" style="order:2;">
-          <span class="proj-badge g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>CRM · ניהול לקוחות</span>
-          <h3>growid CRM</h3>
-          <p>מערכת CRM לניהול עסקאות ואנשי קשר. תצוגת רשימה וקנבן לניהול פייפליין מכירות, מעקב אחר סטטוס עסקאות ותאריכי סגירה, בממשק נוח ואינטואיטיבי.</p>
         </div>
         <div class="proj-visual" style="order:1;">
           <div class="proj-visual-inner">
@@ -286,13 +250,13 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:44px 6%;}
 <section id="process">
   <div class="wrap">
     <div class="eyebrow reveal">איך מתחילים</div>
-    <h2 class="sec-title reveal">ארבעה שלבים פשוטים</h2>
-    <p class="sec-desc reveal">מהפגישה הראשונה ועד לפתרון פעיל. ליווי צמוד לאורך כל הדרך.</p>
+    <h2 class="sec-title reveal">מפגישה ראשונה לדף חי — בארבעה שלבים</h2>
+    <p class="sec-desc reveal">תהליך מהיר, ברור וללא הפתעות. מהרגע הראשון ועד שהלידים מתחילים לזרום.</p>
     <div class="process-grid">
-      <div class="step reveal"><div class="step-num">1</div><h4>אבחון ומיפוי</h4><p>מפגש ראשוני להבנת הצרכים, התהליכים והיעדים של הארגון שלכם.</p></div>
-      <div class="step reveal d1"><div class="step-num">2</div><h4>בניית פתרון</h4><p>פיתוח מותאם עם דמו מהיר, פידבק שוטף ושיפורים ברצף.</p></div>
-      <div class="step reveal d2"><div class="step-num">3</div><h4>הטמעה ואינטגרציה</h4><p>שילוב הפתרון עם כל המערכות הקיימות בארגון ללא הפרעה לשגרה.</p></div>
-      <div class="step reveal d3"><div class="step-num">4</div><h4>ליווי ותמיכה</h4><p>ניטור ביצועים, אופטימיזציה מתמשכת ותמיכה טכנית לאחר ההשקה.</p></div>
+      <div class="step reveal"><div class="step-num">1</div><h4>שיחת ייעוץ</h4><p>מבינים את העסק שלכם — מיהו הלקוח האידיאלי, מה המסר ומה מטרת הדף.</p></div>
+      <div class="step reveal d1"><div class="step-num">2</div><h4>בניית הדף</h4><p>מעצבים ובונים את דף הנחיתה בצבעים ובסגנון העסק שלכם, עם טקסט ממיר.</p></div>
+      <div class="step reveal d2"><div class="step-num">3</div><h4>חיבור מערכת הלידים</h4><p>מגדירים את ה-CRM, ההתראות לווטסאפ/מייל וה-dashboard האישי שלכם.</p></div>
+      <div class="step reveal d3"><div class="step-num">4</div><h4>עלייה לאוויר + ליווי</h4><p>הדף עולה חי ואתם מתחילים לקבל לידים. אנחנו כאן לתמיכה שוטפת.</p></div>
     </div>
   </div>
 </section>
@@ -302,8 +266,8 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:44px 6%;}
     <div class="contact-grid">
       <div class="contact-info">
         <div class="eyebrow reveal">צרו קשר</div>
-        <h2 class="sec-title reveal">מוכנים לקחת את העסק לרמה הבאה?</h2>
-        <p class="sec-desc reveal" style="max-width:360px;margin-bottom:36px;">השאירו פרטים ונחזור אליכם תוך 24 שעות עם שיחת ייעוץ ראשונית ללא עלות.</p>
+        <h2 class="sec-title reveal">מוכנים להפסיק לפספס לידים?</h2>
+        <p class="sec-desc reveal" style="max-width:360px;margin-bottom:36px;">השאירו פרטים ונחזור אליכם תוך 24 שעות עם דמו חי של המערכת — ללא עלות וללא התחייבות.</p>
         <div class="cdet reveal"><div class="cdet-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#a78bff"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><a href="mailto:growidagency@gmail.com" style="color:#c4b0ff;text-decoration:none;">growidagency@gmail.com</a></div>
         <div class="cdet reveal"><div class="cdet-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#a78bff"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></div><a href="https://wa.me/972525888709" target="_blank" style="color:var(--text-2);text-decoration:none;">WhatsApp: 052-588-8709</a></div>
         <div class="cdet reveal"><div class="cdet-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#a78bff"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><span>כפר סבא, ישראל</span></div>
@@ -315,7 +279,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:44px 6%;}
             <div class="fg"><label>שם משפחה</label><input type="text" id="ln" placeholder="ישראלי" required></div>
           </div>
           <div class="fg"><label>אימייל</label><input type="email" id="em" placeholder="israel@company.com" required></div>
-          <div class="fg"><label>תחום עניין</label><select id="sv"><option value="">בחרו שירות</option><option>בוט שיחה</option><option>סוכן AI אוטונומי</option><option>אפליקציה מותאמת ארגון</option><option>אוטומציה ארגונית</option><option>ייעוץ אסטרטגי AI</option></select></div>
+          <div class="fg"><label>תחום עניין</label><select id="sv"><option value="">בחרו שירות</option><option>דף נחיתה + מערכת ניהול לידים</option><option>שדרוג דף נחיתה קיים</option><option>הגדלת אחוז המרה</option><option>ייעוץ אסטרטגי</option></select></div>
           <div class="fg"><label>ספרו לנו</label><textarea id="ms" placeholder="תארו בקצרה את האתגר או הצורך העסקי..."></textarea></div>
           <button type="submit" class="form-submit">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:18px;height:18px;flex-shrink:0;"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
@@ -347,13 +311,10 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:44px 6%;}
 
 <script>
 const SLIDES = {
-  spendi:  ['growid-assets/spendi_1.jpg','growid-assets/spendi_2.jpg','growid-assets/spendi_3.jpg'],
-  growgym: ['growid-assets/growgym_1.jpg','growid-assets/growgym_2.jpg'],
-  tourmate:['growid-assets/tourmate_1.jpg','growid-assets/tourmate_2.jpg'],
-  crm:     ['growid-assets/crm_1.jpg','growid-assets/crm_2.jpg']
+  crm: ['growid-assets/crm_1.jpg','growid-assets/crm_2.jpg']
 };
 Object.values(SLIDES).flat().forEach(s=>{const i=new Image();i.src=s;});
-const cur={spendi:0,growgym:0,tourmate:0,crm:0};
+const cur={crm:0};
 
 function jump(id,idx){
   if(cur[id]===idx)return;
@@ -367,7 +328,7 @@ function jump(id,idx){
 function autoPlay(id){
   setInterval(()=>jump(id,(cur[id]+1)%SLIDES[id].length),3200);
 }
-['spendi','growgym','tourmate','crm'].forEach(autoPlay);
+['crm'].forEach(autoPlay);
 
 const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('v');}),{threshold:.08});
 document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
