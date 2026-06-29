@@ -50,6 +50,21 @@ nav{position:fixed;top:0;right:0;left:0;z-index:100;height:66px;padding:0 6%;dis
 .sec-title{font-size:clamp(30px,3.8vw,48px);font-weight:700;letter-spacing:-1.2px;line-height:1.12;margin-bottom:14px;}
 .sec-desc{font-size:19px;color:var(--text-2);max-width:480px;line-height:1.7;margin-bottom:52px;}
 
+#pricing{padding:80px 0;border-top:1px solid var(--border);}
+.price-card{background:var(--bg-card);border:1px solid var(--border-a);border-radius:24px;padding:48px 52px;max-width:740px;margin:0 auto;}
+.price-pkg{display:inline-block;background:rgba(123,92,245,.12);color:#c4b0ff;font-size:12px;font-weight:700;padding:5px 16px;border-radius:100px;border:1px solid rgba(123,92,245,.25);letter-spacing:.6px;margin-bottom:26px;}
+.price-features{list-style:none;margin-bottom:36px;display:flex;flex-direction:column;gap:13px;}
+.price-features li{display:flex;align-items:flex-start;gap:11px;font-size:17px;color:var(--text-2);line-height:1.5;}
+.price-features li::before{content:"✓";color:var(--green);font-weight:700;font-size:16px;flex-shrink:0;margin-top:2px;}
+.price-boxes{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:22px;}
+.price-box{background:var(--bg-card2);border:1px solid var(--border);border-radius:16px;padding:28px 24px;text-align:center;}
+.price-box.hi{border-color:var(--border-a);background:rgba(123,92,245,.06);}
+.price-box-lbl{font-size:12px;font-weight:700;color:var(--text-3);text-transform:uppercase;letter-spacing:.6px;margin-bottom:12px;}
+.price-amount{font-size:44px;font-weight:700;color:var(--text-1);letter-spacing:-1.5px;line-height:1;margin-bottom:4px;}
+.price-amount sub{font-size:18px;font-weight:500;color:var(--text-2);vertical-align:baseline;}
+.price-freq{font-size:13px;color:var(--text-3);}
+.price-note-txt{font-size:14px;color:var(--text-3);line-height:1.72;border-top:1px solid var(--border);padding-top:18px;text-align:center;}
+
 #services{padding:96px 0;}
 .bento{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
 .bc{background:var(--bg-card);border:1px solid var(--border);border-radius:18px;padding:38px 34px;transition:border-color .25s,transform .25s;display:flex;flex-direction:column;}
@@ -192,6 +207,36 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:44px 6%;}
   <div class="hero-actions reveal d3">
     <a href="#contact" class="btn-p">בקשו דמו</a>
     <a href="#services" class="btn-g">ראו איך זה עובד ↓</a>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="wrap">
+    <div class="eyebrow reveal" style="text-align:center;">מחירון</div>
+    <h2 class="sec-title reveal" style="text-align:center;margin-bottom:40px;">השקעה ברורה. תוצאות מדידות.</h2>
+    <div class="price-card reveal">
+      <div class="price-pkg">החבילה כוללת</div>
+      <ul class="price-features">
+        <li>הקמת דף נחיתה מקצועי לעסק</li>
+        <li>טופס יצירת קשר מותאם אישית</li>
+        <li>חיבור למערכת לניהול לידים</li>
+        <li>קליטת פניות אוטומטית</li>
+        <li>מעקב אחר סטטוס הטיפול בכל ליד</li>
+      </ul>
+      <div class="price-boxes">
+        <div class="price-box">
+          <div class="price-box-lbl">עלות הקמה חד־פעמית</div>
+          <div class="price-amount">1,000<sub> ₪</sub></div>
+          <div class="price-freq">תשלום חד־פעמי</div>
+        </div>
+        <div class="price-box hi">
+          <div class="price-box-lbl">דמי מערכת חודשיים</div>
+          <div class="price-amount">100<sub> ₪</sub></div>
+          <div class="price-freq">לחודש</div>
+        </div>
+      </div>
+      <p class="price-note-txt">המחיר כולל חיבור וניהול בסיסי של מערכת הלידים.<br>שינויים מיוחדים, עיצוב מתקדם או חיבורים נוספים יתומחרו בנפרד.</p>
+    </div>
   </div>
 </section>
 
