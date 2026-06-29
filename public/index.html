@@ -133,6 +133,14 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:44px 6%;}
 .reveal.v{opacity:1;transform:none;}
 .d1{transition-delay:.1s;}.d2{transition-delay:.2s;}.d3{transition-delay:.3s;}
 
+.car-img{cursor:zoom-in;}
+.lb{position:fixed;inset:0;background:rgba(0,0,0,.88);z-index:1000;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .28s ease;backdrop-filter:blur(8px);}
+.lb.open{opacity:1;pointer-events:all;}
+.lb-img{max-width:90vw;max-height:86vh;object-fit:contain;border-radius:12px;transform:scale(.9);transition:transform .28s ease;box-shadow:0 24px 80px rgba(0,0,0,.7);cursor:zoom-out;}
+.lb.open .lb-img{transform:scale(1);}
+.lb-close{position:absolute;top:20px;right:20px;width:40px;height:40px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;color:#fff;font-size:18px;transition:background .2s;line-height:1;}
+.lb-close:hover{background:rgba(255,255,255,.22);}
+
 @media(max-width:900px){
   .bento{grid-template-columns:1fr;}
   .why-layout{grid-template-columns:1fr;gap:40px;}
@@ -309,6 +317,11 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:44px 6%;}
   <p class="footer-copy">זכויות יוצרים © 2026 Growid.AI. כל הזכויות שמורות. כפר סבא, ישראל</p>
 </footer>
 
+<div class="lb" id="lb" onclick="closeLb()">
+  <button class="lb-close" onclick="event.stopPropagation();closeLb()">✕</button>
+  <img class="lb-img" id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+
 <script>
 const SLIDES = {
   crm: ['growid-assets/crm_1.jpg','growid-assets/crm_2.jpg']
@@ -329,6 +342,19 @@ function autoPlay(id){
   setInterval(()=>jump(id,(cur[id]+1)%SLIDES[id].length),3200);
 }
 ['crm'].forEach(autoPlay);
+
+document.getElementById('img-crm').addEventListener('click',function(){openLb(this.src);});
+function openLb(src){
+  const lb=document.getElementById('lb');
+  document.getElementById('lb-img').src=src;
+  lb.classList.add('open');
+  document.body.style.overflow='hidden';
+  window.addEventListener('wheel',closeLb,{once:true,passive:true});
+}
+function closeLb(){
+  document.getElementById('lb').classList.remove('open');
+  document.body.style.overflow='';
+}
 
 const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('v');}),{threshold:.08});
 document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
